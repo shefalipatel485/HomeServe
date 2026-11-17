@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Plus, Search, X, Pencil } from "lucide-react";
 
-const API_BASE = "http://127.0.0.1:8000/api";
+const API_BASE = "https://homeserve-uprh.onrender.com/api";
 
 function TechnicianJobs() {
   const [jobs, setJobs] = useState([]);

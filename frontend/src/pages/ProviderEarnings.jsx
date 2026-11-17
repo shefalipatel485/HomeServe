@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_URL = "http://127.0.0.1:8000/api/provider/earnings";
+const API_URL = "https://homeserve-uprh.onrender.com/api/provider/earnings";
 
 function ProviderEarnings() {
   const [earnings, setEarnings] = useState({

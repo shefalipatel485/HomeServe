@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Plus, Search, Star, X } from "lucide-react";
 
-const API_URL = "http://127.0.0.1:8000/api/reviews";
+const API_URL = "https://homeserve-uprh.onrender.com/api/reviews";
 
 function Reviews() {
   const [reviews, setReviews] = useState([]);

@@ -12,7 +12,7 @@ import {
   Clock
 } from "lucide-react";
 
-const API_URL = "http://127.0.0.1:8000/api/payments";
+const API_URL = "https://homeserve-uprh.onrender.com/api/payments";
 
 // JWT AUTH HEADERS
 const getAuthHeaders = () => {

@@ -8,7 +8,7 @@ import {
   IndianRupee
 } from "lucide-react";
 
-const API_URL = "http://127.0.0.1:8000/api/invoices";
+const API_URL = "https://homeserve-uprh.onrender.com/api/invoices";
 
 function InvoiceManagement() {
   const [invoices, setInvoices] = useState([]);

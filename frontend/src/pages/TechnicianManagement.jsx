@@ -8,7 +8,7 @@ import {
   Wrench
 } from "lucide-react";
 
-const API_URL = "http://127.0.0.1:8000/api/technicians";
+const API_URL = "https://homeserve-uprh.onrender.com/api/technicians";
 
 function TechnicianManagement() {
   const [technicians, setTechnicians] = useState([]);

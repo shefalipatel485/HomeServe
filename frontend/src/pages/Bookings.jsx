@@ -11,8 +11,8 @@ import {
   Ban,
 } from "lucide-react";
 
-const API_URL = "http://127.0.0.1:8000/api/bookings";
-const PROVIDER_URL = "http://127.0.0.1:8000/api/providers";
+const API_URL = "https://homeserve-uprh.onrender.com/api/bookings";
+const PROVIDER_URL = "https://homeserve-uprh.onrender.com/api/providers";
 
 const initialForm = {
   customer: "",

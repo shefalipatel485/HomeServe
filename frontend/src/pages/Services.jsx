@@ -6,7 +6,7 @@ import {
   Sparkles, Bug, Hammer, Settings
 } from "lucide-react";
 
-const API_URL = "http://127.0.0.1:8000/api/services";
+const API_URL = "https://homeserve-uprh.onrender.com/api/services";
 
 // Service icons
 const getServiceIcon = (name) => {

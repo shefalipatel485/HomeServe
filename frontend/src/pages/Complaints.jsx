@@ -6,7 +6,7 @@ import {
   X
 } from "lucide-react";
 
-const API_URL = "http://127.0.0.1:8000/api/complaints";
+const API_URL = "https://homeserve-uprh.onrender.com/api/complaints";
 
 function Complaints() {
   const [complaints, setComplaints] = useState([]);

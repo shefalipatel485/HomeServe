@@ -17,7 +17,7 @@ import {
 import DashboardCard from "../components/DashboardCard";
 import RecentBookings from "../components/RecentBookings";
 
-const API_BASE = "http://127.0.0.1:8000/api";
+const API_BASE = "https://homeserve-uprh.onrender.com/api";
 
 function Dashboard() {
 

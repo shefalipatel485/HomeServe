@@ -8,7 +8,7 @@ import {
   Users,
 } from "lucide-react";
 
-const API_URL = "http://127.0.0.1:8000/api/customers";
+const API_URL = "https://homeserve-uprh.onrender.com/api/customers";
 
 const initialForm = {
   name: "",

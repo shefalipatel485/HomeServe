@@ -5,7 +5,7 @@ import {
   Search
 } from "lucide-react";
 
-const API_URL = "http://127.0.0.1:8000/api/notifications";
+const API_URL = "https://homeserve-uprh.onrender.com/api/notifications";
 
 function Notifications() {
   const [notifications, setNotifications] = useState([]);

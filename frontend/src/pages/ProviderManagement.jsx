@@ -8,7 +8,7 @@ import {
   RefreshCw
 } from "lucide-react";
 import "./ProviderManagement.css";
-const API_URL = "http://127.0.0.1:8000/api/providers";
+const API_URL = "https://homeserve-uprh.onrender.com/api/providers";
 
 function ProviderManagement() {
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_URL = "http://127.0.0.1:8000/api/commission";
+const API_URL = "https://homeserve-uprh.onrender.com/api/commission";
 
 function CommissionManagement() {
   const [commission, setCommission] = useState(0);

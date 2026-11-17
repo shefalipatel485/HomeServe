@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Search } from "lucide-react";
 
-const API_URL = "http://127.0.0.1:8000/api/bookings";
+const API_URL = "https://homeserve-uprh.onrender.com/api/bookings";
 
 function RecentBookings() {
 
