@@ -1,0 +1,24 @@
+flowchart TD
+    A[HomeServe Platform] --> B[Register / Login]
+    B --> C{User Role}
+    C -->|Super Admin| D[Admin Dashboard]
+    C -->|Customer| E[Customer Dashboard]
+    C -->|Service Provider| F[Provider Dashboard]
+    C -->|Technician| G[Technician Dashboard]
+    D --> H[Manage Users, Providers, Categories, Bookings, Payments, Reports]
+    E --> I[Browse Services]
+    I --> J[View Provider and Availability]
+    J --> K[Create Booking]
+    K --> L[Payment Test Flow]
+    L --> M[Booking Confirmation]
+    F --> N[Manage Services and Availability]
+    F --> O[Accept / Reject Booking]
+    O --> P[Assign Technician]
+    P --> G
+    G --> Q[Accept Job / Mark Arrival / Update Status]
+    Q --> R[Upload Completion Evidence]
+    R --> S[Mark Job Completed]
+    S --> T[Customer Review / Complaint]
+    T --> D
+    M --> D
+    D --> U[Analytics and Reports]
