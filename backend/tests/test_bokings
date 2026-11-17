@@ -1,0 +1,66 @@
+
+def test_create_booking(client, customer_headers):
+
+    response = client.post(
+        "/api/bookings",
+        headers=customer_headers,
+        json={
+            "customer": "Test Customer",
+            "service": "AC Repair",
+            "provider_id": None,
+            "date": "2026-12-01",
+            "time_slot": "10:00 AM - 12:00 PM",
+            "address": "Vadodara",
+            "description": "AC is not cooling",
+            "amount": 1500,
+            "status": "Pending"
+        }
+    )
+
+    assert response.status_code in [200, 201]
+
+    assert "booking_code" in response.json()
+
+
+def test_get_bookings(client, customer_headers):
+
+    response = client.get(
+        "/api/bookings",
+        headers=customer_headers
+    )
+
+    assert response.status_code == 200
+def test_create_booking(client, customer_headers):
+
+    response = client.post(
+        "/api/bookings",
+        headers={
+            "Authorization": customer_headers["Authorization"]
+        },
+        json={
+            "customer": "Test Customer",
+            "service": "AC Repair",
+            "provider_id": None,
+            "date": "2026-12-01",
+            "time_slot": "10:00 AM - 12:00 PM",
+            "address": "Vadodara",
+            "description": "AC is not cooling",
+            "amount": 1500,
+            "status": "Pending"
+        }
+    )
+
+    assert response.status_code in [200, 201], response.text
+    assert "booking_code" in response.json()
+
+
+def test_get_bookings(client, customer_headers):
+
+    response = client.get(
+        "/api/bookings",
+        headers={
+            "Authorization": customer_headers["Authorization"]
+        }
+    )
+
+    assert response.status_code == 200
